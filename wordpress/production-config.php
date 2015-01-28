@@ -7,9 +7,8 @@
  *     */
 
 /* WordPress Local Environment DB credentials */
-
-define('DB_NAME', getenv("DB_1_ENV_DB_NAME"));
-define('DB_USER', getenv("DB_1_ENV_DB_USER"));
+define('DB_NAME', getenv("DB_NAME"));
+define('DB_USER', getenv("DB_USER"));
 define('DB_PASSWORD', getenv("DB_1_ENV_MYSQL_PASS"));
 define('DB_HOST', getenv("DB_1_PORT_3306_TCP_ADDR"));
 define('DB_PORT', getenv("DB_1_PORT_3306_TCP_PORT"));
