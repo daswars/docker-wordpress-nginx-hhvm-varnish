@@ -1,0 +1,15 @@
+wordpress:
+  build: .
+  links:
+   - db
+  ports:
+   - "80:80"
+  environment:
+    DB_NAME: wordpress
+    DB_USER: admin
+    DB_PASS: geheim
+db:
+  image: tutum/mysql
+  environment:
+    MYSQL_PASS: geheim
+    MYSQL_USER: admin
