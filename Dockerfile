@@ -1,9 +1,9 @@
 FROM      ubuntu:14.04
 MAINTAINER Matt Webb "mattrw89@gmail.com"
 
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US.UTF-8
-ENV LC_ALL en_US.UTF-8
+ENV LANG de_DE.UTF-8
+ENV LANGUAGE de_DE.UTF-8
+ENV LC_ALL de_DE.UTF-8
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN locale-gen $LANG; echo "LANG=\"${LANG}\"" > /etc/default/locale; dpkg-reconfigure locales
